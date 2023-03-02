@@ -4,6 +4,6 @@ import lombok.*;
 
 @Data
 public class Dish {
-    Integer dishId;
-    String dishName;
+    private Integer id;
+    private String dishName;
 }
