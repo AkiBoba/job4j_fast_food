@@ -8,9 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class App {
+public class MainApp {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        SpringApplication.run(MainApp.class, args);
+        System.out.println("Go to http://localhost:8080/");
     }
 }
