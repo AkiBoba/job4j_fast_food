@@ -4,16 +4,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 import ru.job4j.models.Order;
 import ru.job4j.service.OrderService;
 
-@Controller
+@RestController
 public class OrderController {
-    final private OrderService orderService;
-
-    public OrderController(OrderService orderService) {
-        this.orderService = orderService;
-    }
+    private OrderService orderService;
 
     @GetMapping("/order")
     public String getOrder() {
