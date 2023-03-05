@@ -12,6 +12,12 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>2.7.8</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
     <packaging>pom</packaging>
   <name>job4j_fast_food</name>
